@@ -62,6 +62,8 @@ class PostResource < Avo::BaseResource
   filter FeaturedFilter
   filter PublishedFilter
   filter PostStatusFilter
+  filter ExampleFilter
 
+  action ExportCsv
   action TogglePublished
 end
